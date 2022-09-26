@@ -1,0 +1,47 @@
+{
+  "flow": "API_tc03",
+  "edges": [
+    {
+      "source": 997,
+      "sink": 998,
+      "type": "DruidStreamEdge",
+      "group": 1,
+      "config": {
+        "context": "{}",
+        "replicas": "1",
+        "task_count": "1",
+        "completion_timeout": "PT1800S",
+        "late_message_rejection_period": "PT3600S",
+        "early_message_rejection_period": "PT3600S",
+        "aggregated_lag_offsets": "100000",
+        "delay_of_druid_real_time": "60",
+        "process_failed": "10",
+        "auto_restart_on_kill": "true",
+        "auto_reset_on_delay": "true",
+        "max_rows_per_segment": "1000000",
+        "segment_granularity": "HOUR",
+        "query_granularity": "MINUTE",
+        "schema_source_key": "None",
+        "parser_spec_format_type": "json",
+        "schema_source": "fields_meta",
+        "max_rows_in_memory": "500000",
+        "column": "time_stamp",
+        "transform_spec": "{}",
+        "enable_consistency_alerts": "true",
+        "row_count_deviation_percentage": "0:0"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Group 1",
+      "description": ""
+    }
+  ],
+  "team_id": 314,
+  "flow_use_case": "7",
+   "flock_active": 0 ,
+   "soc_active": 0 ,
+   "mode": "EDIT"
+}
